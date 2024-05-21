@@ -1,2 +1,2 @@
-# Frontend_Mentor-Challanges
-Frontend mentor challanges
+# Frontend MentorChallanges
+These are challanges from Frontend Mentor

@@ -1,0 +1,136 @@
+* {
+  margin: 0%;
+  padding: 0%;
+  font-family: 'Figtree';
+}
+
+@font-face {
+    font-family: 'Figtree-ExtraBold';
+    src: url('./assets/fonts/static/Figtree-ExtraBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Figtree-SemiBold';
+    src: url('/assets/fonts/static/Figtree-SemiBold.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Figtree-Italic';
+    src: url('/assets/fonts/Figtree-Italic-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  @font-face {
+    font-family: 'Figtree';
+    src: url('/assets/fonts/Figtree-VariableFont_wght.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+:root {
+  --Yellow: hsl(47, 88%, 63%);
+  --White: hsl(0, 0%, 100%);
+  --Grey: hsl(0, 0%, 50%);
+  --Black: hsl(0, 0%, 7%);
+}
+
+body{
+    background-color: var(--Yellow);
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card{
+
+    height: 522px;
+    width: 384px;
+    background-color: var(--White);
+    border: 1px solid var(--Black);
+    border-radius: 15px;
+    box-shadow: 8px 8px 0 var(--Black);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+img{
+   
+    border-radius: 10px;
+}
+
+.description{
+   height: 50%;
+   width: 338px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   
+   
+}
+
+.learning{
+
+    text-align: center;
+    width: fit-content;
+    font-size: clamp(10px , 2vw , 20px);
+    padding: 9px;
+   
+    background-color: var(--Yellow);
+    font-family: 'Figtree-ExtraBold';
+    border-radius: 10px;
+}
+
+.published{
+
+    font-family: 'Figtree-SemiBold';
+}
+
+.heading{
+    font-family: 'Figtree-ExtraBold';
+}
+
+.heading:hover{
+    color: var(--Yellow);
+    cursor: pointer var(--Black);
+}
+
+.info{
+
+    color: var(--Grey);
+    font-family: 'Figtree-semiBold';
+}
+
+.creator{
+
+    width: 100%;
+    height: 20%;
+    display: flex;
+    align-items: center;
+}
+
+.creator img{
+
+    width: 50px;
+    height: 50px;
+    padding-right: 10px;
+    
+}
+
+.creator p{
+    font-family: 'Figtree-ExtraBold';
+}
+
+
+
+
+
+
