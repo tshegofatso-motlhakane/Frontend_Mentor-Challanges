@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Main Content</title>
+    <style>
+        body {
+            display: flex;
+        }
+        .side-nav {
+            width: 200px;
+            background-color: #f4f4f4;
+            padding: 10px;
+        }
+        .side-nav li {
+            list-style: none;
+            padding: 10px;
+            cursor: pointer;
+            margin: 5px 0;
+        }
+        .side-nav li:hover {
+            background-color: #ddd;
+        }
+        main {
+            flex: 1;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav class="side-nav">
+        <ul>
+            <li data-content="Content for Home">Home</li>
+            <li data-content="Content for About">About</li>
+            <li data-content="Content for Services">Services</li>
+            <li data-content="Content for Contact">Contact</li>
+        </ul>
+    </nav>
+    <main>
+        Select an item from the side navigation to see content here.
+    </main>
+    <script>
+        // Get all navigation items
+        const navItems = document.querySelectorAll('.side-nav li');
+
+        // Get the main element
+        const mainContent = document.querySelector('main');
+
+        // Add click event listener to each nav item
+        navItems.forEach(item => {
+            item.addEventListener('click', () => {
+                // Update main content with the data-content attribute of the clicked item
+                mainContent.textContent = item.getAttribute('data-content');
+            });
+        });
+    </script>
+</body>
+</html>
